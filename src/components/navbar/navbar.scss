@@ -1,0 +1,56 @@
+@import "../../index.scss";
+
+.navbar {
+  background: $myBlack;
+  display: grid;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+}
+
+.logo {
+  display: grid;
+  grid-template-columns: 1fr 15fr;
+}
+.company {
+  margin-left: 0.2rem;
+  word-spacing: 0.5rem;
+  color: $myGreen;
+  font-family: "Pacifico", cursive;
+}
+.nav-links {
+  float: right;
+  display: grid;
+  list-style: none;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.nav-link {
+  font-family: "Bree Serif", serif;
+  text-decoration: none;
+  margin-left: 0.3rem;
+  color: $myGrey;
+  font-size: 1.5rem;
+  &:hover {
+    color: darkgray;
+  }
+}
+.active {
+  color: $myGreen;
+}
+
+@media screen and (max-width: 780px) {
+  .company {
+    font-size: 1.5rem;
+    word-spacing: 0.2rem;
+  }
+  .nav-link {
+    font-size: 1.2rem;
+  }
+  .logo {
+    img {
+      width: 45px;
+    }
+  }
+}

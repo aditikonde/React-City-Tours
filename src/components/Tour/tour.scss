@@ -1,0 +1,78 @@
+@import "../../index.scss";
+
+.tour {
+  img {
+    width: 100%;
+    display: block;
+    height: 100%;
+    border: 2px solid teal;
+  }
+  background: $myGrey;
+  margin: 2rem 0;
+  transition: $myTransition;
+  &:hover {
+    box-shadow: 3px 5px 10px darkgray;
+  }
+}
+
+.tourName {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $myGreen;
+  font-family: "Bree Serif", serif;
+  letter-spacing: 0.15rem;
+}
+
+@media screen and (min-width: 880px) {
+  .tour {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 1rem;
+  }
+}
+
+.img-container {
+  position: relative;
+  &:hover {
+    .btn-close {
+      opacity: 1;
+    }
+  }
+}
+
+.btn-close {
+  color: $myGreen;
+  top: 5%;
+  left: 5%;
+  position: absolute;
+  font-size: 1.3rem;
+  transition: $myTransition;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.tourInfo {
+  padding: 1rem 0.7rem;
+  h2 {
+    color: $myGreen;
+    font-family: "Bree Serif", serif;
+    letter-spacing: 0.15rem;
+  }
+  h3 {
+    letter-spacing: 0.15rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    color: darkolivegreen;
+    // font-family: "Bree Serif", serif;
+  }
+  h4 {
+    margin: 0.7rem 0rem;
+    font-size: small;
+    font-weight: 600;
+    span {
+      color: $myGreen;
+      margin-left: 0.26rem;
+    }
+  }
+}
