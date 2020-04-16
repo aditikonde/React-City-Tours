@@ -1,7 +1,7 @@
 import React from "react";
 import "./navbar.scss";
 import logo from "../../log.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -13,28 +13,19 @@ export default function Navbar() {
 
       <ul className="nav-links">
         <li>
-          <Link to="/" className="nav-link">
+          <NavLink exact to="/" className="nav-link" activeClassName="active">
             Home
-          </Link>
-          {/* <a href="\" className="nav-link">
-            Home
-          </a> */}
+          </NavLink>
         </li>
         <li>
-          <Link to="/about" className="nav-link">
+          <NavLink to="/about" className="nav-link" activeClassName="active">
             About
-          </Link>
-          {/* <a href="\" className="nav-link">
-            About
-          </a> */}
+          </NavLink>
         </li>
         <li>
-          <Link to="/tours" className="nav-link">
+          <NavLink to="/tours" className="nav-link" activeClassName="active">
             Tours
-          </Link>
-          {/* <a href="\" className="nav-link">
-            Tours
-          </a> */}
+          </NavLink>
         </li>
       </ul>
     </nav>

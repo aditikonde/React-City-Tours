@@ -7,6 +7,7 @@
   text-align: center;
   font-family: "Pacifico", cursive;
 }
+
 .subtitle {
   text-align: center;
   color: green;
@@ -41,7 +42,6 @@
   .App-logo {
     height: 40vmin;
     margin-left: 37% !important;
-    pointer-events: none;
   }
 }
 
@@ -56,7 +56,7 @@
   margin-top: 2rem;
   height: 47vmin;
   margin-left: 37%;
-  pointer-events: none;
+  cursor: pointer;
 }
 
 @keyframes App-logo-spin {
