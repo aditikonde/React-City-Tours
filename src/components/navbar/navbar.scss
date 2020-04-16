@@ -35,9 +35,9 @@
   &:hover {
     color: darkgray;
   }
-}
-.active {
-  color: $myGreen;
+  &:active {
+    color: $myGreen !important;
+  }
 }
 
 @media screen and (max-width: 780px) {
