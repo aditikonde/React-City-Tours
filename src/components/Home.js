@@ -1,5 +1,5 @@
 import React from "react";
-import "./Other.scss";
+import "../App.scss";
 import logoimg from "../city-tour.png";
 import { Link } from "react-router-dom";
 

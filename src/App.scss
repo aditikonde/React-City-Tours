@@ -1,49 +1,67 @@
-.App {
+@import "./index.scss";
+
+.title-about {
+  padding-top: 2rem;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title-home {
+  padding-top: 0.3rem;
+  text-align: center;
+  font-family: "Pacifico", cursive;
 }
 
-// .title-about {
-//   padding-top: 2rem;
-//   text-align: center;
-// }
-// .para {
-//   text-align: center;
-//   padding: 1.3rem 10rem;
-//   color: green;
-//   font-family: Verdana, Geneva, Tahoma, sans-serif;
-//   font-weight: 500;
-// }
+.subtitle {
+  text-align: center;
+  color: $myGreen;
+  font-weight: bold;
+}
+.para-home {
+  padding: 1rem 5rem !important;
+}
+.para {
+  text-align: center;
+  padding: 1.3rem 10rem;
+  color: green;
+  line-height: 1.6rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+}
+.container-home {
+  margin: 0.82rem 10rem !important;
+}
+.container {
+  margin: 1.7rem 10rem;
+  background-color: rgb(234, 236, 229);
+}
 
-@media (prefers-reduced-motion: no-preference) {
+@media screen and (max-width: 1080px) {
+  .para {
+    padding: 1rem 5rem;
+  }
+  .container-home {
+    margin: 0.82rem 1rem !important;
+  }
+  .container {
+    margin: 1.5rem 1rem;
+  }
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    margin-left: 37% !important;
   }
 }
 
-// @media screen and (max-width: 880px) {
-//   .para {
-//     padding: 1rem 5rem;
-//   }
-// }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media screen and (max-width: 880px) {
+  .App-logo {
+    height: 30vmin;
+    margin-left: 30% !important;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+.App-logo {
+  margin-top: 2rem;
+  height: 47vmin;
+  margin-left: 37%;
+  cursor: pointer;
 }
 
 @keyframes App-logo-spin {
@@ -52,5 +70,11 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
   }
 }
